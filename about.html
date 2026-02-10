@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Gardens - Our story, mission, and team serving Europe, Asia, and New Zealand">
+    <title>About Us | Gardens</title>
+    <!-- Same head content as index.html -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <!-- Accessibility Panel (same as index.html) -->
+    <div id="accessibility-panel" class="accessibility-panel">
+        <button id="accessibility-toggle" class="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-options">
+            <span aria-hidden="true">♿</span>
+            <span class="sr-only">Accessibility Options</span>
+        </button>
+        <div id="accessibility-options" class="accessibility-options" hidden>
+            <h3>Accessibility Options</h3>
+            <div class="accessibility-controls">
+                <button id="increase-text" aria-label="Increase text size">A+</button>
+                <button id="decrease-text" aria-label="Decrease text size">A-</button>
+                <button id="high-contrast" aria-label="Toggle high contrast mode">High Contrast</button>
+                <button id="underline-links" aria-label="Toggle link underlines">Underline Links</button>
+                <button id="reset-accessibility" aria-label="Reset all accessibility settings">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header (same as index.html) -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <h1>Gardens</h1>
+                    <span class="tagline">Grow Your Passion</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="hamburger"></span>
+                    <span class="menu-text">MENU</span>
+                </button>
+
+                <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link active" aria-current="page">About Us</a></li>
+                        <li class="dropdown">
+                            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Activities
+                            </button>
+                            <ul class="dropdown-menu" aria-label="Activities submenu">
+                                <li><a href="activities.html#open-gardens">Open Gardens</a></li>
+                                <li><a href="activities.html#monthly-checklist">Monthly Checklist</a></li>
+                                <li><a href="activities.html#greenhouse-tips">Greenhouse Tips</a></li>
+                                <li><a href="activities.html#garden-maintenance">Garden Maintenance</a></li>
+                                <li><a href="activities.html#allotment-jobs">Allotment Jobs</a></li>
+                                <li><a href="activities.html#more-activities">More Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Our Boxes
+                            </button>
+                            <ul class="dropdown-menu" aria-label="Boxes submenu">
+                                <li><a href="boxes.html">All Boxes</a></li>
+                                <li><a href="oddbox.html">Oddbox</a></li>
+                                <li><a href="flourish.html">Flourish Box</a></li>
+                                <li><a href="cottage.html">Cottage Box</a></li>
+                                <li><a href="custom-boxes.html">Custom Boxes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">About Us</span></li>
+                    </ol>
+                </nav>
+                <h1>About Gardens</h1>
+                <p class="page-subtitle">Growing communities across continents since 2015</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="about-story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-content">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2015 by a group of passionate gardeners in Amsterdam, Gardens began as a simple idea: to connect people with nature, no matter where they live or their level of experience.</p>
+                        <p>What started as a local community garden initiative has grown into an international movement, serving gardeners across Europe, Asia, and New Zealand. We believe that everyone should have access to fresh, sustainable gardening opportunities.</p>
+                        <p>Our unique approach combines traditional gardening wisdom with modern technology and sustainable practices, creating a community that learns, grows, and flourishes together.</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="images/about/story.webp" alt="Founders of Gardens in a community garden" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission & Values -->
+        <section class="mission-values">
+            <div class="container">
+                <h2 class="section-title">Our Mission & Values</h2>
+                
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">🌱</div>
+                        <h3>Sustainability</h3>
+                        <p>We champion sustainable gardening practices and work to reduce food waste through initiatives like our Oddbox program.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <h3>Community</h3>
+                        <p>We build connections between gardeners of all levels, creating supportive networks that share knowledge and resources.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">🌍</div>
+                        <h3>Accessibility</h3>
+                        <p>We make gardening accessible to everyone, regardless of space, budget, or experience level.</p>
+                    </div>
+                    
+                    <div class="value-item">
+                        <div class="value-icon">🎓</div>
+                        <h3>Education</h3>
+                        <p>We provide expert guidance and learning resources to help gardeners grow their skills and confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Regions -->
+        <section class="regions">
+            <div class="container">
+                <h2 class="section-title">Where We Grow</h2>
+                <p class="section-subtitle">Serving gardening communities across three continents</p>
+                
+                <div class="regions-grid">
+                    <article class="region-card">
+                        <div class="region-header">
+                            <h3>Europe</h3>
+                            <span class="region-flag">🇳🇱</span>
+                        </div>
+                        <div class="region-content">
+                            <h4>Headquarters: Amsterdam, Netherlands</h4>
+                            <p>Our European operations focus on sustainable urban gardening, community allotments, and reducing food waste through partnerships with local farms.</p>
+                            <ul class="region-features">
+                                <li>Weekly Oddbox deliveries in major cities</li>
+                                <li>Monthly Open Gardens events</li>
+                                <li>Greenhouse workshops</li>
+                                <li>Seasonal planting guides</li>
+                            </ul>
+                            <div class="region-stats">
+                                <div class="stat">
+                                    <span class="stat-number">5,000+</span>
+                                    <span class="stat-label">Active Members</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">50+</span>
+                                    <span class="stat-label">Partner Gardens</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="region-card">
+                        <div class="region-header">
+                            <h3>Asia</h3>
+                            <span class="region-flag">🇸🇬</span>
+                        </div>
+                        <div class="region-content">
+                            <h4>Regional Office: Singapore</h4>
+                            <p>In Asia, we specialize in tropical and urban gardening solutions, balcon

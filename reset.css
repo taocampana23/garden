@@ -1,0 +1,146 @@
+/* Modern CSS Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Allow percentage-based heights */
+html, body {
+    height: 100%;
+}
+
+/* 4. Typographic tweaks */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Create a root stacking context */
+#root, #__next {
+    isolation: isolate;
+}
+
+/* 9. Remove list styles on ul, ol elements */
+ul, ol {
+    list-style: none;
+}
+
+/* 10. Remove default button styles */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* 11. Reset table border spacing */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 12. Remove text decoration from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 13. Remove fieldset styles */
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 14. Remove default details marker */
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 15. Ensure responsive images */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+/* 16. Remove default textarea resize */
+textarea {
+    resize: vertical;
+}
+
+/* 17. Remove default input styles */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* 18. Remove default search input styles */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+/* 19. Reset quote elements */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* 20. Smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* 21. Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

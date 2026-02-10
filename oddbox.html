@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oddbox - Weekly deliveries of wonky vegetables, reducing food waste while providing fresh produce and gardening inspiration">
+    <title>Oddbox | Gardens</title>
+    <!-- Same CSS and font links -->
+</head>
+<body>
+    <!-- Same accessibility panel and header -->
+
+    <main id="main-content" class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><span aria-current="page">Oddbox</span></li>
+                    </ol>
+                </nav>
+                <h1>Oddbox</h1>
+                <p class="page-subtitle">Weekly wonky vegetables that taste perfect</p>
+            </div>
+        </section>
+
+        <!-- Product Hero -->
+        <section class="product-hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-images">
+                        <div class="main-product-image">
+                            <img src="images/boxes/oddbox-main.webp" alt="Oddbox overflowing with wonky vegetables" loading="lazy" id="main-product-img">
+                        </div>
+                        <div class="product-thumbnails">
+                            <button class="thumbnail active" data-image="oddbox-main.webp" aria-label="View main Oddbox image">
+                                <img src="images/boxes/oddbox-thumb1.webp" alt="Oddbox overview">
+                            </button>
+                            <button class="thumbnail" data-image="oddbox2.webp" aria-label="View wonky carrots">
+                                <img src="images/boxes/oddbox-thumb2.webp" alt="Wonky carrots">
+                            </button>
+                            <button class="thumbnail" data-image="oddbox3.webp" aria-label="View vegetable variety">
+                                <img src="images/boxes/oddbox-thumb3.webp" alt="Assorted vegetables">
+                            </button>
+                            <button class="thumbnail" data-image="oddbox4.webp" aria-label="View seeds packet">
+                                <img src="images/boxes/oddbox-thumb4.webp" alt="Seed packets">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-details">
+                        <div class="product-badges">
+                            <span class="badge popular">Most Popular</span>
+                            <span class="badge eco">Eco-Friendly</span>
+                            <span class="badge flexible">Flexible</span>
+                        </div>
+                        
+                        <h2>Rescue Delicious Vegetables</h2>
+                        <p class="product-tagline">Weekly deliveries of perfectly imperfect produce that supermarkets reject</p>
+                        
+                        <div class="product-highlights">
+                            <div class="highlight">
+                                <span class="highlight-icon">🥕</span>
+                                <div>
+                                    <h4>Reduce Food Waste</h4>
+                                    <p>Save vegetables that would otherwise go to waste</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-icon">📦</span>
+                                <div>
+                                    <h4>Weekly Freshness</h4>
+                                    <p>Regular deliveries of seasonal produce</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <span class="highlight-icon">🌱</span>
+                                <div>
+                                    <h4>Grow Your Own</h4>
+                                    <p>Includes seeds to grow rescued varieties</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-section">
+                            <h3>Choose Your Box Size</h3>
+                            <div class="size-options">
+                                <div class="size-option selected">
+                                    <input type="radio" id="size-small" name="box-size" value="small" checked>
+                                    <label for="size-small">
+                                        <h4>Small Box</h4>
+                                        <p class="price">€25/week</p>
+                                        <p>For 1-2 people</p>
+                                        <p class="items">6-8 vegetable items</p>
+                                    </label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-regular" name="box-size" value="regular">
+                                    <label for="size-regular">
+                                        <h4>Regular Box</h4>
+                                        <p class="price">€30/week</p>
+                                        <p>For 2-3 people</p>
+                                        <p class="items">8-10 vegetable items</p>
+                                    </label>
+                                </div>
+                                <div class="size-option">
+                                    <input type="radio" id="size-family" name="box-size" value="family">
+                                    <label for="size-family">
+                                        <h4>Family Box</h4>
+                                        <p class="price">€35/week</p>
+                                        <p>For 4+ people</p>
+                                        <p class="items">10-12 vegetable items</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cta-section">
+                            <a href="contact.html?box=oddbox&size=small" class="btn btn-primary btn-large">Start Your Subscription</a>
+                            <p class="cta-note">Flexible subscription • Cancel anytime • Free delivery</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Information -->
+        <section class="product-details">
+            <div class="container">
+                <div class="details-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="description">Description</button>
+                        <button class="tab-button" data-tab="contents">What's Included</button>
+                        <button class="tab-button" data-tab="how-it-works">How It Works</button>
+                        <button class="tab-button" data-tab="impact">Our Impact</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="description">
+                        <h3>About Oddbox</h3>
+                        <p>Oddbox was created to tackle one of gardening's biggest problems: food waste. Every year, millions of tonnes of perfectly edible fruits and vegetables are rejected by supermarkets simply because they don't meet cosmetic standards. They might be too big, too small, oddly shaped, or have minor blemishes - but they taste just as delicious!</p>
+                        
+                        <p>Our weekly Oddbox brings these "wonky" vegetables directly to your door, along with the seeds to grow your own rescued varieties. You get fresh, seasonal produce while helping reduce food waste and supporting local farmers.</p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature">
+                                <h4>Fresh & Seasonal</h4>
+                                <p>All produce is sourced locally and in season, ensuring maximum freshness and flavor.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Support Local Farmers</h4>
+                                <p>We work directly with farmers to rescue produce that would otherwise go to waste.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Learn & Grow</h4>
+                                <p>Weekly blog posts and growing guides help you make the most of your box.</p>
+                            </div>
+                            <div class="feature">
+                                <h4>Flexible Subscription</h4>
+                                <p>Pause, skip, or cancel anytime. No long-term commitment required.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="contents">
+                        <h3>What You'll Receive</h3>
+                        <p>Each Oddbox is carefully curated based on seasonality and availability. Here's what you can expect:</p>
+                        
+                        <div class="contents-grid">
+                            <div class="content-item">
+                                <h4>Weekly Vegetables</h4>
+                                <p>6-12 seasonal vegetable items (depending on box size), including:</p>
+                                <ul>
+                                    <li>Root vegetables (carrots, potatoes, beets)</li>
+                                    <li>Leafy greens (kale, spinach, lettuce)</li>
+                                    <li>Fruiting vegetables (tomatoes, peppers, zucchini)</li>
+                                    <li>Seasonal specialties</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="content-item">
+                                <h4>Monthly Seed Packets</h4>
+                                <p>Each month includes seeds for growing rescued varieties:</p>
+                                <ul>
+                                    <li>Heirloom vegetable seeds</li>
+                                    <li>Growing instructions</li>
+                                    <li>Seasonal planting advice</li>
+                                    <li>Recipe suggestions</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="content-item">
+                                <h4>Digital Resources</h4>
+                                <p>Access to our exclusive Oddbox community:</p>
+                                <ul>
+                                    <li>Weekly recipe blog</li>
+                                    <li>Storage and preservation tips</li>
+                                    <li>Growing guides for included seeds</li>
+                                    <li>Community forum access</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="sample-box">
+                            <h4>Sample Box (Spring):</h4>
+                            <div class="sample-items">
+                                <span class="sample-item">Wonky Carrots</span>
+                                <span class="sample-item">Curly Kale</span>
+                                <span class="sample-item">Misshapen Potatoes</span>
+                                <span class="sample-item">Bumpy Tomatoes</span>
+                                <span class="sample-item">Twisted Zucchini</span>
+                                <span class="sample-item">Heirloom Tomato Seeds</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="how-it-works">
+                        <h3>How Oddbox Works</h3>
+                        
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Choose Your Box</h4>
+                                    <p>Select your preferred box size (Small, Regular, or Family) and delivery frequency (weekly).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>We Source & Pack</h4>
+                                    <p>Each week, we work with local farmers to rescue vegetables that don't meet supermarket cosmetic standards.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Fresh Delivery</h4>
+                                    <p>Your Oddbox is delivered to your door on your chosen day. All produce is fresh, seasonal, and locally sourced.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Enjoy & Learn</h4>
+                                    <p>Enjoy your wonky vegetables and use our resources to learn storage tips, recipes, and growing techniques.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="delivery-info">
+                            <h4>Delivery Information:</h4>
+                            <ul>
+                                <li><strong>Delivery Day:</strong> Choose from available days in your area (typically Tuesday-Friday)</li>
+                                <li><strong>Delivery Time:</strong> Morning delivery (8 AM - 1 PM) in most areas</li>
+                                <li><strong>Packaging:</strong> Recyclable cardboard box with compostable lining</li>
+                                <li><strong>Missed Delivery:</strong> Leave instructions for safe place or neighbor delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="impact">
+                        <h3>Our Environmental Impact</h3>
+                        
+                        <div class="impact-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Local Farmers Supported</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100,000+ kg</span>
+                                <span class="stat-label">Food Waste Prevented</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">10,000+</span>
+                                <span class="stat-label">Happy Subscribers</span>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-details">
+                            <h4>How We Make a Difference:</h4>
+                            <ul>
+                                <li><strong>Direct Farmer Relationships:</strong> We pay fair prices for produce that would otherwise be wasted</li>
+                                <li><strong>Sustainable Packaging:</strong> 100% recyclable or compostable packaging materials</li>
+                                <li><strong>Carbon-Neutral Delivery:</strong> We offset all delivery emissions through certified programs</li>
+                                <li><strong>Community Education:</strong> Teaching subscribers about food waste and sustainable practices</li>
+                                <li><strong>Seed Preservation:</strong> Promoting heirloom and traditional vegetable varieties</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="testimonial-impact">
+                            <blockquote>
+                                "Since subscribing to Oddbox, I've not only reduced my food waste but also discovered vegetables I never knew existed. The wonky carrots taste better than the 'perfect' ones from the supermarket!"
+                                <cite>– Maria S., Amsterdam</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrated Blog Section -->
+        <section class="oddbox-blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Oddbox Blog</h2>
+                    <p>Weekly tips, recipes, and stories from our community</p>
+                </div>
+                
+                <div class="blog-grid">
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="images/blog/oddbox1.webp" alt="Wonky vegetable recipes" loading="lazy">
+                        </div>
+                        <div class="post-content">
+                            <h3>5 Creative Ways to Use Wonky Carrots</h3>
+                            <p class="post-date">March 10, 2025</p>
+                            <p>Discover delicious recipes that make the most of oddly shaped carrots, from roasted carrot soup to carrot top pesto.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="images/blog/oddbox2.webp" alt="Seed starting guide" loading="lazy">
+                        </div>
+                        <div class="post-content">
+                            <h3>Starting Your Heirloom Tomato Seeds</h3>
+                            <p class="post-date">March 3, 2025</p>
+                            <p>A step-by-step guide to starting the heirloom tomato seeds included in this month's Oddbox.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="images/blog/oddbox3.webp" alt="Farmer interview" loading="lazy">
+                        </div>
+                        <div class="post-content">
+                            <h3>Meet Our Farmers: The Jensen Family</h3>
+                            <p class="post-date">February 24, 2025</p>
+                            <p>Learn about the family farm that provides many of our wonky potatoes and how Oddbox has helped their business.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="view-all">
+                    <a href="blog.html?category=oddbox" class="btn btn-secondary">View All Oddbox Articles</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="product-faq">
+            <div class="container">
+                <h2 class="section-title">Oddbox Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <details class="faq-item" open>
+                        <summary>
+                            <h3>What exactly are "wonky" vegetables?</h3>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Wonky vegetables are perfectly edible fruits and vegetables that don't meet supermarket cosmetic standards. They might be oddly shaped, too large or small, have minor blemishes, or be surplus to requirements. They taste exactly the same as "perfect" vegetables but are often rejected by supermarkets for cosmetic reasons.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>
+                            <h3>Can I choose what vegetables I receive?</h3>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Oddbox is based on seasonality and what's available from our farmers each week, so we don't offer custom selection. This approach allows us to rescue vegetables that would otherwise go to waste. However, you can indicate preferences or allergies in your account, and we'll do our best to accommodate them.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>
+                            <h3>How do I store my Oddbox vegetables?</h3>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Each delivery includes storage instructions for the specific vegetables in your box. Generally, root vegetables (carrots, potatoes, beets) should be stored in a cool, dark place. Leafy greens should be refrigerated in airtight containers. Our weekly blog also includes storage tips and recipe ideas.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>
+                            <h3>What if I'm not home for delivery?</h3>
+                        </summary>
+                        <div class="faq-content">
+                            <p>You can leave delivery instructions in your account, such as leaving the box in a safe place, with a neighbor, or in a designated delivery box. We use insulated packaging to keep vegetables fresh for several hours after delivery.</p>
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item">
+                        <summary>
+                            <h3>Can I pause or skip a delivery?</h3>
+                        </summary>
+                        <div class="faq-content">
+                            <p>Yes! You can easily pause your subscription or skip specific deliveries through your account dashboard. We require at least 3 days' notice before your scheduled delivery day to make changes.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="product-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Join the Food Waste Revolution?</h2>
+                    <p>Start your Oddbox subscription today and enjoy fresh, seasonal vegetables while making a positive environmental impact.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html?box=oddbox" class="btn btn-primary btn-large">Start Your Subscription</a>
+                        <a href="contact.html" class="btn btn-secondary">Ask More Questions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top and Footer -->
+</body>
+</html>

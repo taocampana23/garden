@@ -1,0 +1,344 @@
+:root {
+    /* ============ COLOR PALETTE ============ */
+    /* Primary Colors */
+    --color-primary-50: #f0f7f0;
+    --color-primary-100: #d9e9da;
+    --color-primary-200: #b8d5ba;
+    --color-primary-300: #8fbc93;
+    --color-primary-400: #6ea174;
+    --color-primary-500: #4A7C59; /* Main Primary Green */
+    --color-primary-600: #3b6749;
+    --color-primary-700: #2E5E3A; /* Dark Primary */
+    --color-primary-800: #23482e;
+    --color-primary-900: #1a3724;
+    
+    /* Secondary Colors */
+    --color-secondary-50: #fdf8f3;
+    --color-secondary-100: #f7ede2;
+    --color-secondary-200: #efdcc9;
+    --color-secondary-300: #e5c5a8;
+    --color-secondary-400: #d4a574; /* Light Earth */
+    --color-secondary-500: #A87C4A; /* Main Earth */
+    --color-secondary-600: #946c42;
+    --color-secondary-700: #7d5b37;
+    --color-secondary-800: #664a2d;
+    --color-secondary-900: #533d25;
+    
+    /* Neutral Colors */
+    --color-neutral-50: #fafaf9;
+    --color-neutral-100: #f5f5f4;
+    --color-neutral-200: #e7e5e4;
+    --color-neutral-300: #d6d3d1;
+    --color-neutral-400: #a8a29e;
+    --color-neutral-500: #78716c;
+    --color-neutral-600: #57534e;
+    --color-neutral-700: #44403c;
+    --color-neutral-800: #292524;
+    --color-neutral-900: #1c1917;
+    
+    /* Accent Colors */
+    --color-accent-cream: #F8F5F1;
+    --color-accent-white: #FFFFFF;
+    --color-accent-warm: #FFF9F0;
+    --color-accent-cool: #F0F7FA;
+    
+    /* Semantic Colors */
+    --color-success-50: #f0fdf4;
+    --color-success-500: #22c55e;
+    --color-success-700: #15803d;
+    
+    --color-warning-50: #fefce8;
+    --color-warning-500: #eab308;
+    --color-warning-700: #a16207;
+    
+    --color-error-50: #fef2f2;
+    --color-error-500: #ef4444;
+    --color-error-700: #b91c1c;
+    
+    --color-info-50: #eff6ff;
+    --color-info-500: #3b82f6;
+    --color-info-700: #1d4ed8;
+    
+    /* ============ TYPOGRAPHY ============ */
+    /* Font Families */
+    --font-family-heading: 'Merriweather', Georgia, serif;
+    --font-family-body: 'Open Sans', system-ui, -apple-system, sans-serif;
+    --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', monospace;
+    
+    /* Font Sizes - Fluid Typography */
+    --font-size-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+    --font-size-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+    --font-size-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --font-size-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+    --font-size-2xl: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+    --font-size-3xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.25rem);
+    --font-size-4xl: clamp(2.25rem, 1.9rem + 1.75vw, 3rem);
+    --font-size-5xl: clamp(3rem, 2.5rem + 2.5vw, 3.75rem);
+    --font-size-6xl: clamp(3.75rem, 3rem + 3.75vw, 4.5rem);
+    
+    /* Line Heights */
+    --line-height-tight: 1.25;
+    --line-height-snug: 1.375;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.625;
+    --line-height-loose: 2;
+    
+    /* Letter Spacing */
+    --letter-spacing-tighter: -0.05em;
+    --letter-spacing-tight: -0.025em;
+    --letter-spacing-normal: 0em;
+    --letter-spacing-wide: 0.025em;
+    --letter-spacing-wider: 0.05em;
+    --letter-spacing-widest: 0.1em;
+    
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    
+    /* ============ SPACING ============ */
+    --spacing-px: 1px;
+    --spacing-0: 0;
+    --spacing-0_5: 0.125rem;   /* 2px */
+    --spacing-1: 0.25rem;      /* 4px */
+    --spacing-1_5: 0.375rem;   /* 6px */
+    --spacing-2: 0.5rem;       /* 8px */
+    --spacing-2_5: 0.625rem;   /* 10px */
+    --spacing-3: 0.75rem;      /* 12px */
+    --spacing-3_5: 0.875rem;   /* 14px */
+    --spacing-4: 1rem;         /* 16px */
+    --spacing-5: 1.25rem;      /* 20px */
+    --spacing-6: 1.5rem;       /* 24px */
+    --spacing-7: 1.75rem;      /* 28px */
+    --spacing-8: 2rem;         /* 32px */
+    --spacing-9: 2.25rem;      /* 36px */
+    --spacing-10: 2.5rem;      /* 40px */
+    --spacing-11: 2.75rem;     /* 44px */
+    --spacing-12: 3rem;        /* 48px */
+    --spacing-14: 3.5rem;      /* 56px */
+    --spacing-16: 4rem;        /* 64px */
+    --spacing-20: 5rem;        /* 80px */
+    --spacing-24: 6rem;        /* 96px */
+    --spacing-28: 7rem;        /* 112px */
+    --spacing-32: 8rem;        /* 128px */
+    --spacing-36: 9rem;        /* 144px */
+    --spacing-40: 10rem;       /* 160px */
+    --spacing-44: 11rem;       /* 176px */
+    --spacing-48: 12rem;       /* 192px */
+    --spacing-52: 13rem;       /* 208px */
+    --spacing-56: 14rem;       /* 224px */
+    --spacing-60: 15rem;       /* 240px */
+    --spacing-64: 16rem;       /* 256px */
+    --spacing-72: 18rem;       /* 288px */
+    --spacing-80: 20rem;       /* 320px */
+    --spacing-96: 24rem;       /* 384px */
+    
+    /* ============ BORDERS ============ */
+    /* Border Radius */
+    --radius-none: 0;
+    --radius-sm: 0.125rem;     /* 2px */
+    --radius-base: 0.25rem;    /* 4px */
+    --radius-md: 0.375rem;     /* 6px */
+    --radius-lg: 0.5rem;       /* 8px */
+    --radius-xl: 0.75rem;      /* 12px */
+    --radius-2xl: 1rem;        /* 16px */
+    --radius-3xl: 1.5rem;      /* 24px */
+    --radius-full: 9999px;
+    
+    /* Border Widths */
+    --border-width-0: 0;
+    --border-width-1: 1px;
+    --border-width-2: 2px;
+    --border-width-4: 4px;
+    --border-width-8: 8px;
+    
+    /* Border Colors */
+    --border-color-light: var(--color-neutral-200);
+    --border-color-base: var(--color-neutral-300);
+    --border-color-dark: var(--color-neutral-400);
+    --border-color-primary: var(--color-primary-500);
+    
+    /* ============ SHADOWS ============ */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    --shadow-none: 0 0 #0000;
+    
+    /* ============ TRANSITIONS & ANIMATIONS ============ */
+    --transition-duration-fast: 150ms;
+    --transition-duration-base: 250ms;
+    --transition-duration-slow: 350ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    --animation-duration-fast: 200ms;
+    --animation-duration-base: 300ms;
+    --animation-duration-slow: 500ms;
+    
+    /* ============ LAYOUT ============ */
+    /* Container Widths */
+    --container-xs: 20rem;     /* 320px */
+    --container-sm: 24rem;     /* 384px */
+    --container-md: 28rem;     /* 448px */
+    --container-lg: 32rem;     /* 512px */
+    --container-xl: 36rem;     /* 576px */
+    --container-2xl: 42rem;    /* 672px */
+    --container-3xl: 48rem;    /* 768px */
+    --container-4xl: 56rem;    /* 896px */
+    --container-5xl: 64rem;    /* 1024px */
+    --container-6xl: 72rem;    /* 1152px */
+    --container-7xl: 80rem;    /* 1280px */
+    --container-full: 100%;
+    
+    /* Breakpoints */
+    --breakpoint-xs: 20rem;    /* 320px */
+    --breakpoint-sm: 40rem;    /* 640px */
+    --breakpoint-md: 48rem;    /* 768px */
+    --breakpoint-lg: 64rem;    /* 1024px */
+    --breakpoint-xl: 80rem;    /* 1280px */
+    --breakpoint-2xl: 96rem;   /* 1536px */
+    
+    /* Grid Gaps */
+    --gap-0: 0;
+    --gap-1: 0.25rem;
+    --gap-2: 0.5rem;
+    --gap-3: 0.75rem;
+    --gap-4: 1rem;
+    --gap-5: 1.25rem;
+    --gap-6: 1.5rem;
+    --gap-8: 2rem;
+    --gap-10: 2.5rem;
+    --gap-12: 3rem;
+    --gap-16: 4rem;
+    --gap-20: 5rem;
+    --gap-24: 6rem;
+    
+    /* ============ Z-INDEX ============ */
+    --z-index-0: 0;
+    --z-index-10: 10;
+    --z-index-20: 20;
+    --z-index-30: 30;
+    --z-index-40: 40;
+    --z-index-50: 50;
+    --z-index-auto: auto;
+    
+    /* Specific z-index layers */
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+    --z-index-accessibility: 1080;
+    --z-index-notification: 1090;
+    
+    /* ============ ACCESSIBILITY ============ */
+    /* Focus Styles */
+    --focus-ring-width: 3px;
+    --focus-ring-color: var(--color-primary-500);
+    --focus-ring-offset: 2px;
+    
+    /* Reduced Motion */
+    --reduced-motion: reduce;
+    
+    /* ============ UTILITIES ============ */
+    /* Aspect Ratios */
+    --aspect-video: 16 / 9;
+    --aspect-square: 1;
+    --aspect-portrait: 3 / 4;
+    --aspect-landscape: 4 / 3;
+    
+    /* Opacity */
+    --opacity-0: 0;
+    --opacity-5: 0.05;
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-25: 0.25;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-75: 0.75;
+    --opacity-80: 0.8;
+    --opacity-90: 0.9;
+    --opacity-95: 0.95;
+    --opacity-100: 1;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    --color-primary-500: #005A00;
+    --color-primary-700: #003300;
+    --color-secondary-500: #804000;
+    --color-accent-cream: #FFFFFF;
+    --color-neutral-100: #FFFFFF;
+    --color-neutral-200: #F0F0F0;
+    --color-neutral-300: #E0E0E0;
+    --color-neutral-700: #000000;
+    --color-neutral-900: #000000;
+    
+    --border-color-base: #000000;
+    --border-color-dark: #000000;
+    
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+    
+    --focus-ring-color: #000000;
+    --focus-ring-width: 4px;
+}
+
+/* Large Text Mode */
+.large-text {
+    --font-size-xs: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
+    --font-size-sm: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --font-size-base: clamp(1.125rem, 1.05rem + 0.375vw, 1.375rem);
+    --font-size-lg: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+    --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+    --font-size-2xl: clamp(1.875rem, 1.6rem + 1.375vw, 2.5rem);
+    --font-size-3xl: clamp(2.25rem, 1.9rem + 1.75vw, 3.25rem);
+    --font-size-4xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
+    --font-size-5xl: clamp(3.75rem, 3rem + 3.75vw, 5rem);
+    --font-size-6xl: clamp(4.5rem, 3.5rem + 5vw, 6rem);
+    
+    --line-height-normal: 1.6;
+    --line-height-relaxed: 1.7;
+    --line-height-loose: 2.1;
+}
+
+/* Dark Mode (Optional - for future enhancement) */
+@media (prefers-color-scheme: dark) {
+    :root:not(.high-contrast) {
+        --color-primary-500: #6ea174;
+        --color-primary-700: #4A7C59;
+        --color-secondary-500: #d4a574;
+        --color-accent-cream: #1a1a1a;
+        --color-neutral-50: #0a0a0a;
+        --color-neutral-100: #1a1a1a;
+        --color-neutral-200: #2a2a2a;
+        --color-neutral-300: #3a3a3a;
+        --color-neutral-400: #4a4a4a;
+        --color-neutral-500: #8a8a8a;
+        --color-neutral-600: #a0a0a0;
+        --color-neutral-700: #c0c0c0;
+        --color-neutral-800: #e0e0e0;
+        --color-neutral-900: #f0f0f0;
+        
+        --border-color-light: var(--color-neutral-700);
+        --border-color-base: var(--color-neutral-600);
+        --border-color-dark: var(--color-neutral-500);
+        
+        --shadow-sm: 0 1px 2px 0 rgba(255, 255, 255, 0.05);
+        --shadow-base: 0 1px 3px 0 rgba(255, 255, 255, 0.1), 0 1px 2px -1px rgba(255, 255, 255, 0.1);
+        --shadow-md: 0 4px 6px -1px rgba(255, 255, 255, 0.1), 0 2px 4px -2px rgba(255, 255, 255, 0.1);
+    }
+}

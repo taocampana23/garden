@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gardening activities, events, and community programs - Open Gardens, monthly checklists, greenhouse tips and more">
+    <title>Gardening Activities | Gardens</title>
+    <!-- Same CSS and font links as index.html -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <!-- Accessibility Panel -->
+    <div id="accessibility-panel" class="accessibility-panel">
+        <button id="accessibility-toggle" class="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-options">
+            <span aria-hidden="true">♿</span>
+            <span class="sr-only">Accessibility Options</span>
+        </button>
+        <div id="accessibility-options" class="accessibility-options" hidden>
+            <h3>Accessibility Options</h3>
+            <div class="accessibility-controls">
+                <button id="increase-text" aria-label="Increase text size">A+</button>
+                <button id="decrease-text" aria-label="Decrease text size">A-</button>
+                <button id="high-contrast" aria-label="Toggle high contrast mode">High Contrast</button>
+                <button id="underline-links" aria-label="Toggle link underlines">Underline Links</button>
+                <button id="reset-accessibility" aria-label="Reset all accessibility settings">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <h1>Gardens</h1>
+                    <span class="tagline">Grow Your Passion</span>
+                </a>
+                
+                <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="hamburger"></span>
+                    <span class="menu-text">MENU</span>
+                </button>
+
+                <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="dropdown">
+                            <button class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true" aria-current="page">
+                                Activities
+                            </button>
+                            <ul class="dropdown-menu" aria-label="Activities submenu">
+                                <li><a href="#open-gardens">Open Gardens</a></li>
+                                <li><a href="#monthly-checklist">Monthly Checklist</a></li>
+                                <li><a href="#greenhouse-tips">Greenhouse Tips</a></li>
+                                <li><a href="#garden-maintenance">Garden Maintenance</a></li>
+                                <li><a href="#allotment-jobs">Allotment Jobs</a></li>
+                                <li><a href="#more-activities">More Activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                                Our Boxes
+                            </button>
+                            <ul class="dropdown-menu" aria-label="Boxes submenu">
+                                <li><a href="boxes.html">All Boxes</a></li>
+                                <li><a href="oddbox.html">Oddbox</a></li>
+                                <li><a href="flourish.html">Flourish Box</a></li>
+                                <li><a href="cottage.html">Cottage Box</a></li>
+                                <li><a href="custom-boxes.html">Custom Boxes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Activities</span></li>
+                    </ol>
+                </nav>
+                <h1>Gardening Activities & Community</h1>
+                <p class="page-subtitle">Join our events, learn new skills, and connect with fellow gardeners</p>
+            </div>
+        </section>
+
+        <!-- Activities Filter -->
+        <section class="activities-filter">
+            <div class="container">
+                <div class="filter-container">
+                    <label for="activity-filter" class="filter-label">Filter by category:</label>
+                    <select id="activity-filter" class="filter-select">
+                        <option value="all">All Activities</option>
+                        <option value="events">Events</option>
+                        <option value="monthly">Monthly Tasks</option>
+                        <option value="advice">Expert Advice</option>
+                        <option value="community">Community</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Grid -->
+        <section class="activities-detailed">
+            <div class="container">
+                <!-- Open Gardens -->
+                <article id="open-gardens" class="activity-detailed" data-category="events">
+                    <div class="activity-header">
+                        <h2>Open Gardens</h2>
+                        <span class="activity-category">Community Event</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/activities/open-garden.webp" alt="Beautiful open garden with visitors" loading="lazy">
+                        </div>
+                        <div class="activity-description">
+                            <h3>Visit Inspiring Gardens</h3>
+                            <p>Join our monthly Open Gardens events where community members open their beautiful gardens for visitors. This is a wonderful opportunity to:</p>
+                            <ul>
+                                <li>Get inspiration for your own garden design</li>
+                                <li>Learn about different plant varieties</li>
+                                <li>Meet experienced gardeners</li>
+                                <li>Discover gardening techniques specific to your region</li>
+                            </ul>
+                            <div class="activity-schedule">
+                                <h4>Upcoming Events:</h4>
+                                <ul class="event-list">
+                                    <li>
+                                        <strong>March 15, 2025</strong> - Cottage Garden Tour, Amsterdam
+                                        <a href="#" class="event-register">Register Now</a>
+                                    </li>
+                                    <li>
+                                        <strong>March 22, 2025</strong> - Urban Balcony Gardens, Singapore
+                                        <a href="#" class="event-register">Register Now</a>
+                                    </li>
+                                    <li>
+                                        <strong>March 29, 2025</strong> - Native Plant Garden, Auckland
+                                        <a href="#" class="event-register">Register Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="contact.html?interest=open-gardens" class="btn btn-primary">Get Event Updates</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Monthly Checklist -->
+                <article id="monthly-checklist" class="activity-detailed" data-category="monthly">
+                    <div class="activity-header">
+                        <h2>Monthly Gardening Checklist</h2>
+                        <span class="activity-category">Monthly Task Guide</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-description">
+                            <h3>Never Miss a Gardening Task</h3>
+                            <p>Our comprehensive monthly checklists help gardeners of all levels stay on track with seasonal tasks. Each checklist is tailored to your region (Europe, Asia, or New Zealand) and includes:</p>
+                            <ul>
+                                <li>Planting and sowing schedules</li>
+                                <li>Pruning and maintenance tasks</li>
+                                <li>Pest and disease prevention</li>
+                                <li>Harvesting guidance</li>
+                                <li>Soil care and fertilization</li>
+                            </ul>
+                            <div class="checklist-preview">
+                                <h4>March Checklist Preview (Europe):</h4>
+                                <div class="checklist-items">
+                                    <div class="checklist-item">
+                                        <input type="checkbox" id="task1">
+                                        <label for="task1">Prune rose bushes before spring growth</label>
+                                    </div>
+                                    <div class="checklist-item">
+                                        <input type="checkbox" id="task2">
+                                        <label for="task2">Start tomato and pepper seeds indoors</label>
+                                    </div>
+                                    <div class="checklist-item">
+                                        <input type="checkbox" id="task3">
+                                        <label for="task3">Prepare vegetable beds with compost</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Download Full Checklist (PDF)</a>
+                            <a href="#" class="btn btn-primary">Subscribe to Monthly Emails</a>
+                        </div>
+                        <div class="activity-image">
+                            <img src="images/activities/checklist.webp" alt="Gardening checklist notebook" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Greenhouse Tips -->
+                <article id="greenhouse-tips" class="activity-detailed" data-category="advice">
+                    <div class="activity-header">
+                        <h2>Greenhouse Tips</h2>
+                        <span class="activity-category">Expert Advice</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/activities/greenhouse.webp" alt="Modern greenhouse with plants" loading="lazy">
+                        </div>
+                        <div class="activity-description">
+                            <h3>Master Greenhouse Gardening</h3>
+                            <p>Whether you have a small hobby greenhouse or a large commercial setup, our expert tips will help you maximize your growing potential.</p>
+                            <div class="tips-grid">
+                                <div class="tip-card">
+                                    <h4>Temperature Control</h4>
+                                    <p>Learn how to maintain optimal temperatures year-round with ventilation and heating strategies.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <h4>Pest Management</h4>
+                                    <p>Organic solutions for common greenhouse pests without harmful chemicals.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <h4>Propagation</h4>
+                                    <p>Master seed starting, cuttings, and division techniques for successful propagation.</p>
+                                </div>
+                                <div class="tip-card">
+                                    <h4>Seasonal Planting</h4>
+                                    <p>Year-round planting schedules to maximize your greenhouse space.</p>
+                                </div>
+                            </div>
+                            <div class="workshop-info">
+                                <h4>Upcoming Greenhouse Workshop:</h4>
+                                <p><strong>April 5, 2025</strong> - "Year-Round Greenhouse Production" (Online)</p>
+                                <a href="#" class="btn btn-accent">Register for Workshop</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Garden Maintenance -->
+                <article id="garden-maintenance" class="activity-detailed" data-category="advice">
+                    <div class="activity-header">
+                        <h2>Garden Maintenance Advice</h2>
+                        <span class="activity-category">Expert Advice</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-description">
+                            <h3>Keep Your Garden Healthy</h3>
+                            <p>Regular maintenance is key to a thriving garden. Our advice covers all aspects of garden care:</p>
+                            <div class="maintenance-areas">
+                                <div class="area">
+                                    <h4>Soil Health</h4>
+                                    <ul>
+                                        <li>Testing and amending soil</li>
+                                        <li>Composting techniques</li>
+                                        <li>Mulching for moisture retention</li>
+                                    </ul>
+                                </div>
+                                <div class="area">
+                                    <h4>Plant Care</h4>
+                                    <ul>
+                                        <li>Proper watering techniques</li>
+                                        <li>Pruning and deadheading</li>
+                                        <li>Support and training plants</li>
+                                    </ul>
+                                </div>
+                                <div class="area">
+                                    <h4>Tool Maintenance</h4>
+                                    <ul>
+                                        <li>Cleaning and sharpening tools</li>
+                                        <li>Proper storage</li>
+                                        <li>Tool selection guide</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="video-library">
+                                <h4>Maintenance Video Library:</h4>
+                                <div class="video-grid">
+                                    <a href="#" class="video-thumbnail">
+                                        <img src="images/activities/video1.webp" alt="Pruning demonstration" loading="lazy">
+                                        <span>Pruning Fruit Trees</span>
+                                    </a>
+                                    <a href="#" class="video-thumbnail">
+                                        <img src="images/activities/video2.webp" alt="Compost making" loading="lazy">
+                                        <span>Making Compost</span>
+                                    </a>
+                                    <a href="#" class="video-thumbnail">
+                                        <img src="images/activities/video3.webp" alt="Watering system setup" loading="lazy">
+                                        <span>Drip Irrigation Setup</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-image">
+                            <img src="images/activities/maintenance.webp" alt="Gardener maintaining plants" loading="lazy">
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Allotment Jobs -->
+                <article id="allotment-jobs" class="activity-detailed" data-category="monthly">
+                    <div class="activity-header">
+                        <h2>Allotment Jobs</h2>
+                        <span class="activity-category">Community & Monthly Tasks</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/activities/allotment.webp" alt="Community allotment garden" loading="lazy">
+                        </div>
+                        <div class="activity-description">
+                            <h3>Community Allotment Projects</h3>
+                            <p>Join our community allotment programs or get guidance for your own allotment garden. We provide:</p>
+                            <ul>
+                                <li>Seasonal job schedules for allotments</li>
+                                <li>Community work days and volunteer opportunities</li>
+                                <li>Crop rotation planning assistance</li>
+                                <li>Allotment design and layout advice</li>
+                                <li>Pest and disease management for communal gardens</li>
+                            </ul>
+                            
+                            <div class="allotment-projects">
+                                <h4>Current Community Projects:</h4>
+                                <div class="project-card">
+                                    <h5>Amsterdam Urban Allotment</h5>
+                                    <p><strong>Next Work Day:</strong> March 20, 2025, 10:00 AM</p>
+                                    <p>Tasks: Preparing spring beds, planting early vegetables, compost turning</p>
+                                    <a href="#" class="btn btn-secondary">Join Work Day</a>
+                                </div>
+                                <div class="project-card">
+                                    <h5>Auckland Community Garden</h5>
+                                    <p><strong>Next Work Day:</strong> March 27, 2025, 9:00 AM</p>
+                                    <p>Tasks: Autumn planting, garden cleanup, tool maintenance workshop</p>
+                                    <a href="#" class="btn btn-secondary">Join Work Day</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- More Activities -->
+                <article id="more-activities" class="activity-detailed" data-category="community">
+                    <div class="activity-header">
+                        <h2>More Community Activities</h2>
+                        <span class="activity-category">Community Engagement</span>
+                    </div>
+                    <div class="activity-content">
+                        <div class="more-activities-grid">
+                            <div class="extra-activity">
+                                <h3>Plant Diary & Progress Notes</h3>
+                                <p>Track your gardening journey with our digital plant diary. Record planting dates, growth progress, harvest yields, and observations.</p>
+                                <a href="#" class="btn btn-secondary">Start Your Plant Diary</a>
+                            </div>
+                            
+                            <div class="extra-activity">
+                                <h3>Photographic Competitions</h3>
+                                <p>Enter our seasonal photography competitions. Categories include: Best Garden Shot, Most Creative Harvest, Wildlife in the Garden.</p>
+                                <a href="#" class="btn btn-secondary">View Competition Rules</a>
+                            </div>
+                            
+                            <div class="extra-activity">
+                                <h3>Seasonal Surveys</h3>
+                                <p>Participate in our community surveys to help us understand gardening trends and challenges in different regions.</p>
+                                <a href="#" class="btn btn-secondary">Take Current Survey</a>
+                            </div>
+                            
+                            <div class="extra-activity">
+                                <h3>Online Advice Talks</h3>
+                                <p>Join live Q&A sessions with gardening experts. Monthly topics cover everything from beginner basics to advanced techniques.</p>
+                                <a href="#" class="btn btn-secondary">View Schedule & Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="activities-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Get Involved?</h2>
+                    <p>Join our growing community of gardeners across Europe, Asia, and New Zealand. Whether you're looking for events, advice, or community connections, we have something for everyone.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Contact Us for More Info</a>
+                        <a href="#" class="btn btn-secondary">Download Activities Calendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Gardens</h3>
+                    <p>Growing communities across Europe, Asia, and New Zealand through shared passion for gardening.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Follow us on Facebook">Facebook</a>
+                        <a href="#" aria-label="Follow us on Instagram">Instagram</a>
+                        <a href="#" aria-label="Follow us on Pinterest">Pinterest</a>
+                        <a href="#" aria-label="Subscribe to our YouTube">YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="boxes.html">Our Boxes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="oddbox.html">Oddbox Subscriptions</a></li>
+                        <li><a href="flourish.html">Flourish Box</a></li>
+                        <li><a href="cottage.html">Cottage Box</a></li>
+                        <li><a href="custom-boxes.html">Custom Boxes</a></li>
+                        <li><a href="activities.html#open-gardens">Open Gardens</a></li>
+                        <li><a href="activities.html#monthly-checklist">Monthly Checklists</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <address>
+                        <p><strong>Europe HQ:</strong><br>
+                        123 Garden Lane<br>
+                        Amsterdam, Netherlands</p>
+                        
+                        <p><strong>Asia Office:</strong><br>
+                        456 Green Street<br>
+                        Singapore</p>
+                        
+                        <p><strong>New Zealand:</strong><br>
+                        789 Flora Road<br>
+                        Auckland, NZ</p>
+                        
+                        <p>Email: <a href="mailto:info@gardens.com">info@gardens.com</a></p>
+                        <p>Phone: +31 20 123 4567</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gardens. All rights reserved.</p>
+                <p>
+                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="#">Terms of Service</a> | 
+                    <a href="contact.html">Contact Us</a>
+                </p>
+                <p class="accessibility-statement">
+                    <a href="#accessibility-panel">Accessibility Options</a> | 
+                    We are committed to making our website accessible to all users.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/activities-filter.js" defer></script>
+    <script src="js/accessibility-panel.js" defer></script>
+    <script src="js/lazy-load.js" defer></script>
+</body>
+</html>
